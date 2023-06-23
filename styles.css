@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Montserrat, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: 2rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #000;
+    box-shadow: 0 5px 10px 10px #000;
+}
+
+header .content {
+    width: 100%;
+    padding: 1rem 1rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo */
+.square-1 {
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.square-2 {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    padding: .2rem;
+}
+
+.square-3 {
+    width: 70%;
+    height: 70%;
+    background-color: #fff;
+}
+
+/* nav */
+
+nav ul li {
+    display: inline;
+    font-weight: 600;
+    padding-right: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    /* text-decoration: none; */
+}
+
+/* main section */
+
+.main {
+    position: relative;
+    top: -1.35rem;
+    padding: 0;
+}
+
+.main a{
+    display: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 735px;
+    background-image: url("./images/hero-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* mission */
+
+.mission {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 2.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+}
+
+.mission h1 {
+    font-weight: 200;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.mission h2 {
+    line-height: 2;
+}
+
+@media only screen and (max-width: 815px) {
+    .hero {
+        padding-top: 0;
+    }
+    
+    .mission{
+        padding: 13.5rem 1rem;
+    }
+
+    .mission h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 689px) {
+    .hero {
+        padding-top: 0;
+    }
+    
+    .mission h1{
+        font-size: 2rem;
+    }
+    
+    .mission h2{
+        font-size: 1rem;
+    }
+}
+
+/* products */
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.product {
+    /* position: relative; */
+    flex: 1 1 20%;
+    min-width: 300px;
+    max-width: 360px;
+    height: 450px;
+    margin: 1rem 0.5rem;
+    padding: .25rem .85rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    /* max-width: 100%; */
+    width: auto;
+    height: 200px;
+    display: block;
+}
+
+.product p {
+    text-align: center;
+}
+
+.p-4 img{
+    margin-top: 40px;
+    height: 160px;
+}
+
+.btn {
+    bottom: 0;
+    width: 80%;
+    padding: 1rem .5rem;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/* staff */
+
+.staff-section {
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+}
+
+
+.staff {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.teacher {
+    /* position: relative; */
+    flex: 1 1 28%;
+    min-width: 300px;
+    max-width: 360px;
+    height: 450px;
+    margin: 1.5rem 1rem;
+    padding: .25rem .85rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teacher-img {
+    width: 150px;
+    height: 200px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: .75rem;
+}
+
+.t-1 {
+    background-image: url("./images/Guarascio.jpg");
+}
+
+.t-2 {
+    background-image: url("./images/Peyote.jpg");
+}
+
+.t-3 {
+    background-image: url("./images/Lundini.jpg");
+    background-position: 55%;
+}
+
+.teacher p {
+    text-align: center;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    height: max-content;
+    justify-content: space-between;
+    align-items: end;
+    color: #2a2a2a;
+    margin: 0;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+footer ul li {
+    display: inline;
+    padding-right: 1.5rem;
+}
+
+@media only screen and (max-width: 689px) {
+    footer {
+        font-size: .75rem;
+    }
+
+    footer ul li {
+        padding-right: 1rem;
+    }
+}
